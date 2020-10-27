@@ -1,0 +1,29 @@
+#include <stdio.h>
+main()
+{
+int a, b, c, d, i;
+printf("Tell me two numbers whose H.C.F you want to calculate....\n");
+scanf("%d%d", &a, &b);
+if(a<b);
+{d=a;
+c=b;
+for(i=0; d!=0; i++)
+{
+    d=c%d;
+    c=a;
+    a=d;
+}
+printf("%Your H.C.F os %d.\n", c);}
+if(b<a)
+    {
+        d=b;
+        c=a;
+        for(i=0; d!=0; i++)
+        {
+            d=c%d;
+            c=b;
+            b=d;
+        }
+        printf("Your H.C.F is %d.\n", c);
+    }
+}
